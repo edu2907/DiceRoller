@@ -12,11 +12,10 @@ class MainActivity : AppCompatActivity() {
         val rollButton: Button = findViewById(R.id.button)
         val resultTextView: TextView = findViewById(R.id.textView)
 
-        rollButton.setOnClickListener {
-            resultTextView.text = rollDice()
-        }
+        rollButton.setOnClickListener { resultTextView.text = rollDice() }
     }
 }
+
 class Dice(private val numSides: Int) {
 
     fun roll(): Int {
